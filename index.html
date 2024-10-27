@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Homepage</title>
+  <style>
+    body {
+      overflow-y: hidden;
+    }
+    .page-container {
+      height: calc(100vh - 56px - 56px); /* Viewport height minus navbar and footer height */
+      display: flex;
+      flex-direction: column;
+    }
+    .carousel-container {
+      flex: 0 0 200px; /* Fixed height for carousel */
+    }
+    .carousel-item img {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <!-- nav bar start -->
+  <nav class="navbar navbar-expand-lg navbar-dark text-light" style="background-color: #364c84">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="font-family: 'Times New Roman', Times, serif;" href="#"><strong>ZAHRO</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="/" id="home-link">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/About" id="about-link">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Experiences/" id="experiences-link">Experiences</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Skills" id="skills-link">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="/FindMe/" id="findme-link">Find Me</a></li>
+        </ul>
+        <!-- <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+  <!-- nav bar end -->
+
+  <!-- main content -->
+  <div class="container-fluid p-0" style="background-image: url(/assests/IMG_20240112_175245.jpg);">
+    <div class="page-container">
+      <!-- welcome text -->
+      <div class="flex-grow-1 d-flex align-items-center justify-content-center">
+        <h1 class="display-1" style="color: white; text-align: center;">WELCOME TO MY PAGE</h1>
+      </div>
+
+      <!-- carousel image -->
+      <div class="carousel-container">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assests/display1.jpg" class="d-block w-100" alt="display1">
+            </div>
+            <div class="carousel-item">
+              <img src="assests/display2.jpg" class="d-block w-100" alt="display2">
+            </div>
+            <div class="carousel-item">
+              <img src="assests/display3.jpg" class="d-block w-100" alt="display3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="py-3 text-center" style="background-color: #e8d3c1;">
+    <p class="m-0"> © 2024 Zahro Indah</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
